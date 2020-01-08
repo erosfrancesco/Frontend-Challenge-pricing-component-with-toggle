@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
-  <title>Frontend Mentor | [Challenge Name Here]</title>
+  <title>Frontend Mentor | Pricing Component With Toggle</title>
 
   <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 
@@ -16,126 +16,130 @@
   <link rel="stylesheet" href="index.css">
   
   
-  <div class="toggle_container">
-    <h2> Our Pricing </h2>
-    <strong>Annually</strong>
-    <div style="display: inline">
-      <input type="checkbox" class="mytoggle" id="mycheckbox" onchange="toggle(this.checked)" />
-      <label for="mycheckbox" />
+  <div class="component_wrapper">
+
+    <div class="toggle_container">
+      <h2> Our Pricing </h2>
+      <strong>Annually</strong>
+      <div style="display: inline">
+        <input type="checkbox" class="mytoggle" id="mycheckbox" onchange="toggle(this.checked)" />
+        <label for="mycheckbox" />
+      </div>
+      <strong>Monthly</strong>
     </div>
-    <strong>Monthly</strong>
-  </div>
 
 
-  <script>
+    <script>
 
-    window.onload = () => {
-      const isChecked = true
-      toggle(isChecked)
-      document.getElementById("mycheckbox").checked = isChecked
-    }
-
-    function toggle(checked) {
-      togglePricing(checked)
-    }
-
-    function togglePricing(checked) {
-      toggleDisplayOf("annual", checked)
-      toggleDisplayOf("month", !checked)
-    }
-
-    function toggleDisplayOf(className, show) {
-      forEachClassElements(className, item => { item.style.display = show ? "inline" : "none" })
-    }
-
-    function forEachClassElements(className, iterator) {
-      const elements = document.getElementsByClassName(className)
-      for (let i = 0; i < elements.length; i++) {
-        iterator(elements[i], i)
+      window.onload = () => {
+        const isChecked = true
+        toggle(isChecked)
+        document.getElementById("mycheckbox").checked = isChecked
       }
-    }
-  </script>
+
+      function toggle(checked) {
+        togglePricing(checked)
+      }
+
+      function togglePricing(checked) {
+        toggleDisplayOf("annual", checked)
+        toggleDisplayOf("month", !checked)
+      }
+
+      function toggleDisplayOf(className, show) {
+        forEachClassElements(className, item => { item.style.display = show ? "inline" : "none" })
+      }
+
+      function forEachClassElements(className, iterator) {
+        const elements = document.getElementsByClassName(className)
+        for (let i = 0; i < elements.length; i++) {
+          iterator(elements[i], i)
+        }
+      }
+    </script>
 
 
+    <br>
+    <br>
+
+    <div style="text-align: -webkit-center;">
+      <div style="display: inline-flex;">
+        <div class="papers_wrapper">
+          
+          <div class="wrapper">
+            <div class="paper_container">
+              <h4>Basic</h4>
+              <div class="pricing_wrapper">
+                <strong class="pricing dollar">&dollar;</strong>
+                <strong class="pricing month">19.99</strong>
+                <strong class="pricing annual">199.99</strong>
+              </div>
+
+              <div class="custom_divider"></div>
+              <h5>500 GB Storage</h5>
+              <div class="custom_divider"></div>
+              <h5>2 Users Allowed</h5>
+              <div class="custom_divider"></div>
+              <h5>Send up to 3 GB</h5>
+              <div class="custom_divider"></div>
+
+              <button class="paper_button button_main">LEARN MORE</button>
+            </div>
+          </div>
 
 
+          <div class="wrapper">
+            <div class="paper_container paper_main">
+              <h4>Professional</h4>
+              <div class="pricing_wrapper">
+                <strong class="pricing dollar">&dollar;</strong>
+                <strong class="pricing month">24.99</strong>
+                <strong class="pricing annual">249.99</strong>
+              </div>
+
+              <div class="custom_divider"></div>
+              <h5>1 TB Storage</h5>
+              <div class="custom_divider"></div>
+              <h5>5 Users Allowed</h5>
+              <div class="custom_divider"></div>
+              <h5>Send up to 10 GB</h5>
+              <div class="custom_divider"></div>
+
+              <button class="paper_button">LEARN MORE</button>
+            </div>
+          </div>
 
 
-  <br>
-  <br>
+          <div class="wrapper">
+            <div class="paper_container">
+              <h4>Master</h4>
+              <div class="pricing_wrapper">
+                <strong class="pricing dollar">&dollar;</strong>
+                <strong class="pricing month">39.99</strong>
+                <strong class="pricing annual">399.99</strong>
+              </div>
 
-  <div style="text-align: -webkit-center;">
-    <div class="papers_wrapper">
-      
-      <div class="paper_container">
-        <h4>Basic</h4>
-        <div class="pricing_wrapper">
-          <strong class="pricing dollar">&dollar;</strong>
-          <strong class="pricing month">19.99</strong>
-          <strong class="pricing annual">199.99</strong>
+              <div class="custom_divider"></div>
+              <h5>2 TB Storage</h5>
+              <div class="custom_divider"></div>
+              <h5>10 Users Allowed</h5>
+              <div class="custom_divider"></div>
+              <h5>Send up to 20 GB</h5>
+              <div class="custom_divider"></div>
+
+              <button class="paper_button button_main">LEARN MORE</button>
+            </div>
+          </div>
+          
         </div>
-
-        <div class="custom_divider"></div>
-        <h5>500 GB Storage</h5>
-        <div class="custom_divider"></div>
-        <h5>2 Users Allowed</h5>
-        <div class="custom_divider"></div>
-        <h5>Send up to 3 GB</h5>
-        <div class="custom_divider"></div>
-
-        <button class="paper_button button_main">LEARN MORE</button>
       </div>
-
-      
-      <div class="paper_container paper_main">
-        <h4>Professional</h4>
-        <div class="pricing_wrapper">
-          <strong class="pricing dollar">&dollar;</strong>
-          <strong class="pricing month">24.99</strong>
-          <strong class="pricing annual">249.99</strong>
-        </div>
-
-        <div class="custom_divider"></div>
-        <h5>1 TB Storage</h5>
-        <div class="custom_divider"></div>
-        <h5>5 Users Allowed</h5>
-        <div class="custom_divider"></div>
-        <h5>Send up to 10 GB</h5>
-        <div class="custom_divider"></div>
-
-        <button class="paper_button">LEARN MORE</button>
-      </div>
-
-
-      <div class="paper_container">
-        <h4>Master</h4>
-        <div class="pricing_wrapper">
-          <strong class="pricing dollar">&dollar;</strong>
-          <strong class="pricing month">39.99</strong>
-          <strong class="pricing annual">399.99</strong>
-        </div>
-
-        <div class="custom_divider"></div>
-        <h5>2 TB Storage</h5>
-        <div class="custom_divider"></div>
-        <h5>10 Users Allowed</h5>
-        <div class="custom_divider"></div>
-        <h5>Send up to 20 GB</h5>
-        <div class="custom_divider"></div>
-
-        <button class="paper_button button_main">LEARN MORE</button>
-      </div>
-      
     </div>
   </div>
 
-
-  <br>
-  <br>
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/erosfrancesco">Eros Francesco Reale</a>.
   </div>
 
 </body>

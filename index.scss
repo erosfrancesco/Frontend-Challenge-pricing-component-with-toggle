@@ -2,12 +2,14 @@
 @import "./scss/card.scss";
 @import "./scss/switch.scss";
 @import "./scss/content.scss";
+@import "./scss/wrappers.scss";
 
 
 body {
-    background-color: $background-light-color;
+    height: 100vh;
+    // background-color: $background-light-color;
 
-    background-image: url('images/bg-top.svg'), url('images/bg-bottom.svg');
-    background-position: right top, left bottom;
-    background-repeat: no-repeat, no-repeat;
+    // background-image: url('images/bg-top.svg'), url('images/bg-bottom.svg');
+    // background-position: right top, left bottom;
+    // background-repeat: no-repeat, no-repeat;
 }

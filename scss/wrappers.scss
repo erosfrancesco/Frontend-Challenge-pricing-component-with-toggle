@@ -1,0 +1,20 @@
+@import "./theme.scss";
+
+
+  
+.papers_wrapper {
+    display: inline-flex;
+    justify-content: center;
+
+    display: flex; 
+    flex-flow: row wrap;
+}
+
+
+
+.component_wrapper {
+    background-color: $background-light-color;
+    background-image: url('images/bg-top.svg'), url('images/bg-bottom.svg');
+    background-position: right top, left bottom;
+    background-repeat: no-repeat, no-repeat;
+}
