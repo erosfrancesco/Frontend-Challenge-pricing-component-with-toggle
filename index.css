@@ -5,6 +5,7 @@
   width: 80%;
   height: 9%;
   margin-top: 25px;
+  cursor: pointer;
   background: #f6f6fe !important;
   color: #696fdd !important;
   border: none;
@@ -16,14 +17,156 @@
   color: #f6f6fe !important;
   background: #8086ba;
   /* Old browsers */
-  background: -moz-linear-gradient(-45deg, #8086ba 0%, #3c41a3 100%) !important;
+  background: -moz-linear-gradient(-45deg, #8086ba 0%, #696fdd 100%) !important;
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(-45deg, #8086ba 0%, #3c41a3 100%) !important;
+  background: -webkit-linear-gradient(-45deg, #8086ba 0%, #696fdd 100%) !important;
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(135deg, #8086ba 0%, #3c41a3 100%) !important;
+  background: linear-gradient(135deg, #8086ba 0%, #696fdd 100%) !important;
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
 
+.paper_container {
+  text-align: center;
+  border-radius: 8px;
+  width: 230px;
+  height: 320px;
+  color: #494c5f;
+  background: white;
+  font-family: 'Montserrat'; }
+
+/**/
+.paper_main {
+  width: 250px !important;
+  height: 360px !important;
+  margin-top: -20px;
+  border-radius: 10px !important;
+  color: #f6f6fe;
+  background: #8086ba;
+  /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #8086ba 0%, #696fdd 100%) !important;
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #8086ba 0%, #696fdd 100%) !important;
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #8086ba 0%, #696fdd 100%) !important;
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
+
+.papers_wrapper {
+  display: inline-flex;
+  background: transparent;
+  height: 320px !important;
+  box-shadow: 0px 10px 20px #b3b5c6; }
+
+.mytoggle {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: -99999px; }
+
+.mytoggle + label {
+  font-family: arial;
+  vertical-align: middle;
+  width: 60px;
+  height: 30px;
+  display: inline-block;
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: #b3b5c6;
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-out;
+  -o-transition: .25s ease-out;
+  transition: .25s ease-out; }
+
+.mytoggle + label:before {
+  width: 22px;
+  height: 22px;
+  left: 4px;
+  top: 4px;
+  border-radius: 11px;
+  z-index: 2;
+  display: block;
+  position: absolute;
+  background: #f6f6fe;
+  font-size: 14.99px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-indent: -32px;
+  word-spacing: 40px;
+  content: "";
+  color: #f6f6fe;
+  white-space: nowrap;
+  -webkit-transition: .25s ease-out;
+  -moz-transition: .25s ease-out;
+  -o-transition: .25s ease-out;
+  transition: .25s ease-out; }
+
+.mytoggle:checked + label {
+  background: #8086ba;
+  /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #8086ba 0%, #696fdd 100%) !important;
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #8086ba 0%, #696fdd 100%) !important;
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #8086ba 0%, #696fdd 100%) !important;
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
+
+input.mytoggle:focus + label {
+  outline: 0; }
+
+.mytoggle:checked + label:before {
+  background-color: #f6f6fe;
+  color: #f6f6fe;
+  left: 34px; }
+
+/* Container */
+.toggle_container {
+  text-align: center; }
+
+.toggle_container div {
+  display: inherit; }
+
+.toggle_container strong {
+  font-family: 'Montserrat';
+  margin: 2%;
+  font-size: 15px;
+  font-weight: 700; }
+
+.paper_container h4 {
+  position: relative;
+  top: 10px; }
+
+.paper_main h4 {
+  top: 20px !important;
+  margin: 30px; }
+
+.paper_container h5 {
+  margin: 7px; }
+
+.custom_divider {
+  opacity: 40%;
+  width: 80%;
+  height: 1px;
+  margin-left: 10%;
+  background: #b3b5c6; }
+
+.pricing_wrapper {
+  height: 90px; }
+
+.pricing {
+  font-weight: bold;
+  font-size: -webkit-xxx-large; }
+
+.dollar {
+  font-size: x-large !important;
+  position: relative;
+  top: -7px; }
+
 body {
-  background-color: #f6f6fe; }
+  background-color: #f6f6fe;
+  background-image: url("images/bg-top.svg"), url("images/bg-bottom.svg");
+  background-position: right top, left bottom;
+  background-repeat: no-repeat, no-repeat; }
 
 /*# sourceMappingURL=index.css.map */

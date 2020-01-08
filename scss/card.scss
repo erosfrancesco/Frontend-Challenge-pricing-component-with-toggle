@@ -1,0 +1,32 @@
+@import "./theme.scss";
+
+.paper_container {
+    text-align: center;
+    border-radius: 8px;
+    width: 230px;
+    height: 320px;
+  
+    color: $text-dark-color;
+    background: $background-very-light-color;
+    
+    @include custom-font;
+  }
+  
+  /**/
+  .paper_main {
+    width: 250px !important;
+    height: 360px !important;
+    margin-top: -20px;
+    border-radius: 10px !important;
+  
+    color: $background-light-color;
+    @include custom-gradient;
+}
+  
+  .papers_wrapper {
+    display: inline-flex;
+    background: transparent;
+    height: 320px !important;
+    box-shadow: 0px 10px 20px $shadow-color;
+  }
+  

@@ -1,0 +1,41 @@
+@import "./theme.scss";
+
+.paper_container h4 {
+    position: relative;
+    top: 10px;
+}
+  
+.paper_main h4 {
+    top: 20px !important;
+    margin: 30px;
+}
+  
+  
+.paper_container h5 {
+    margin: 7px;
+}
+  
+  
+.custom_divider {
+    opacity: 40%;
+    width: 80%; 
+    height: 1px; 
+    margin-left: 10%;
+    background: $shadow-color;
+}
+  
+
+.pricing_wrapper {
+    height: 90px;
+}
+
+.pricing {
+    font-weight: bold;
+    font-size: -webkit-xxx-large;
+}
+  
+.dollar {
+    font-size: x-large !important;
+    position: relative;
+    top: -7px;
+}
