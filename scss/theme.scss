@@ -1,0 +1,20 @@
+$gradient1-color: rgb(128,134,186);
+$gradient2-color: rgba(60,65,163,1);
+
+$shadow-color: hsl(234, 14%, 74%);
+$dark-shadow-color: hsl(233, 13%, 49%);
+
+$background-light-color: hsl(240, 78%, 98%);
+$text-dark-color: hsl(232, 13%, 33%);
+$primary-color: hsl(237, 63%, 64%);
+
+@mixin custom-font {
+    font-family: 'Montserrat';
+}
+
+@mixin custom-gradient {
+    background: $gradient1-color; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, $gradient1-color 0%, $gradient2-color 100%) !important; /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, $gradient1-color 0%,$gradient2-color 100%) !important; /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, $gradient1-color 0%, $gradient2-color 100%) !important; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}

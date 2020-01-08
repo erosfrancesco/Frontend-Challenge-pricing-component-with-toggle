@@ -1,0 +1,44 @@
+.paper_container h4 {
+  position: relative;
+  top: 10px;
+}
+
+.paper_main h4 {
+  top: 20px !important;
+}
+
+
+.paper_container h5 {
+  margin: 10px;
+}
+
+
+
+.paper_container h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.paper_main h1 {
+  margin-bottom: 20px;
+}
+
+
+
+.paper_container div {
+  width: 80%; 
+  height: 1px; 
+  margin-left: 10%;
+  background: hsl(234, 14%, 74%);
+}
+
+.pricing {
+  font-weight: bold;
+  font-size: -webkit-xxx-large;
+}
+
+.dollar {
+  font-size: x-large !important;
+  position: relative;
+  top: -7px;
+}
